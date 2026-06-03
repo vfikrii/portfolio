@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Fikri | DevOps & Infrastructure Engineer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio Muhammad Fikri, Junior System Administrator dan Network Administrator dari Sumatera Utara, Indonesia.">
+    <meta name="keywords"
+        content="Muhammad Fikri, System Administrator, Network Administrator, Linux, DevOps, Proxmox, Infrastructure">
+    <meta name="author" content="Muhammad Fikri">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Muhammad Fikri | Infrastructure Engineer">
+    <meta property="og:description"
+        content="Portfolio Muhammad Fikri - Linux Administration, Network Infrastructure, and Virtualization.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts: Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loader" class="loader-wrapper">
+        <div class="terminal-loader">
+            <div class="terminal-header">
+                <div class="terminal-button red"></div>
+                <div class="terminal-button yellow"></div>
+                <div class="terminal-button green"></div>
+            </div>
+            <div class="terminal-body">
+                <span class="prompt">root@server:~#</span> <span class="typing-load">systemctl start portfolio...</span>
+                <br><span class="status-ok hidden">[ OK ]</span> <span class="loading-done hidden">System loaded
+                    successfully.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-terminal"></i> Fikri<span>.sys</span>
+            </a>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-container grid-2-col">
+                <div class="hero-content reveal">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Muhammad Fikri</h1>
+                    <h2 class="subtitle">
+                        > <span id="typewriter"></span><span class="cursor">_</span>
+                    </h2>
+                    <p class="description">
+                        Mahasiswa D3 Teknik Komputer Politeknik Negeri Medan dengan keahlian praktis dalam System
+                        Administration dan Network Engineering. Berpengalaman merancang infrastruktur jaringan skala
+                        enterprise, mengelola virtualisasi server, serta mengintegrasikan solusi IT melalui proyek dan
+                        magang di industri telekomunikasi (Telkom) maupun penyiaran (TVRI).
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
+                        <a href="assets/CV_Muhammad_Fikri.pdf" class="btn btn-outline" download><i
+                                class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-graphic reveal-delay">
+                    <div class="server-rack">
+                        <div class="server-unit">
+                            <div class="lights"><span class="blink"></span><span></span><span></span></div>
+                        </div>
+                        <div class="server-unit">
+                            <div class="lights"><span></span><span class="blink"></span><span></span></div>
+                        </div>
+                        <div class="server-unit active">
+                            <div class="lights"><span class="blink"></span><span class="blink"></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="about section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="about-grid grid-2-col">
+                    <div class="about-image-wrapper reveal">
+                        <div class="image-frame">
+                            <img src="assets/images/profil.jpg" alt="Muhammad Fikri" class="profile-img"
+                                onerror="this.src='https://via.placeholder.com/400x500/111827/4ade80?text=MF'">
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-delay">
+                        <h3>Junior System Administrator</h3>
+                        <p class="tagline">Linux Administration • Network Infrastructure • Virtualization</p>
+
+                        <p class="about-text">
+                            Saya adalah mahasiswa D3 Teknik Komputer di Politeknik Negeri Medan yang berdedikasi tinggi
+                            pada bidang <strong>System Administration</strong> dan <strong>Jaringan Komputer</strong>.
+                            Pengalaman magang saya di instansi besar seperti PT Telkom Indonesia dan LPP TVRI telah
+                            memperkuat kemampuan praktik saya dalam mengelola infrastruktur TI, instalasi jaringan fiber
+                            optik, LAN/WAN, hingga <em>troubleshooting</em> langsung di lapangan.
+                        </p>
+                        <p class="about-text">
+                            Selain menangani infrastruktur fisik, saya juga telah membangun dan merancang berbagai
+                            sistem terintegrasi. Proyek-proyek saya mencakup pengelolaan Enterprise Linux Server,
+                            perancangan jaringan dengan Cisco Packet Tracer, hingga implementasi IoT (Internet of
+                            Things) dan Sistem Informasi berbasis Web. Saya terus bersemangat untuk menciptakan
+                            infrastruktur digital yang efisien, aman, dan andal.
+                        </p>
+
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Experiences</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                        <h3>System Administration</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Linux Administration</li>
+                            <li><i class="fas fa-check"></i> Ubuntu Server</li>
+                            <li><i class="fas fa-check"></i> SSH</li>
+                            <li><i class="fas fa-check"></i> Windows Administration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>Networking</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> TCP/IP</li>
+                            <li><i class="fas fa-check"></i> VLAN</li>
+                            <li><i class="fas fa-check"></i> Routing & Switching</li>
+                            <li><i class="fas fa-check"></i> DHCP & DNS</li>
+                            <li><i class="fas fa-check"></i> Subnetting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Virtualization</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> VirtualBox</li>
+                            <li><i class="fas fa-check"></i> Proxmox VE</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Database</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> MySQL</li>
+                            <li><i class="fas fa-check"></i> PostgreSQL</li>
+                            <li><i class="fas fa-check"></i> SQL Server</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> C#</li>
+                            <li><i class="fas fa-check"></i> Python</li>
+                            <li><i class="fas fa-check"></i> JavaScript</li>
+                            <li><i class="fas fa-check"></i> PHP</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> Git & GitHub</li>
+                            <li><i class="fas fa-check"></i> Cisco Packet Tracer</li>
+                            <li><i class="fas fa-check"></i> VS Code</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 7 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Web Development</h3>
+                        <ul class="skill-list">
+                            <li><i class="fas fa-check"></i> HTML</li>
+                            <li><i class="fas fa-check"></i> CSS</li>
+                            <li><i class="fas fa-check"></i> Laravel Framework</li>
+                            <li><i class="fas fa-check"></i> Node Js</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experience Section -->
+        <section id="experience" class="experience section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-body">
+                                <div class="timeline-text">
+                                    <span class="timeline-date">January 2026 – March 2026</span>
+                                    <h3>LPP TVRI Stasiun Sumatera Utara</h3>
+                                    <h4 class="timeline-role">Magang – Dukungan Infrastruktur TI dan Jaringan</h4>
+                                    <div class="timeline-tasks">
+                                        <ul>
+                                            <li>Melakukan instalasi, pengujian, dan pemeliharaan kabel jaringan LAN pada
+                                                lingkungan perkantoran dan penyiaran</li>
+                                            <li>Membantu proses troubleshooting jaringan dan perangkat TI untuk
+                                                mendukung kelancaran operasional</li>
+                                            <li>Mendukung konfigurasi dan pemantauan perangkat yang terhubung ke
+                                                jaringan</li>
+                                            <li>Membantu tim teknis dalam penyelesaian gangguan perangkat keras dan
+                                                konektivitas jaringan</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-gallery">
+                                    <strong>Dokumentasi:</strong>
+                                    <div class="gallery-images">
+                                        <img src="assets/images/placeholder-tvri-1.jpg" alt="Dokumentasi TVRI 1"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+TVRI+1'">
+                                        <img src="assets/images/placeholder-tvri-2.jpg" alt="Dokumentasi TVRI 2"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+TVRI+2'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-body">
+                                <div class="timeline-text">
+                                    <span class="timeline-date">October 2025 – December 2025</span>
+                                    <h3>Politeknik Negeri Medan</h3>
+                                    <h4 class="timeline-role">Asisten Pengajar/Dosen</h4>
+                                    <div class="timeline-tasks">
+                                        <ul>
+                                            <li>Membantu mahasiswa memahami dasar pemrograman, pengembangan web, dan
+                                                basis data</li>
+                                            <li>Membantu penyusunan dokumentasi teknis dan materi pembelajaran</li>
+                                            <li>Mendukung proses pembelajaran, debugging, serta implementasi proyek
+                                                perangkat lunak</li>
+                                            <li>Mendukung kegiatan penelitian dan pengolahan data akademik</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-gallery">
+                                    <strong>Dokumentasi:</strong>
+                                    <div class="gallery-images">
+                                        <img src="assets/images/placeholder-polmed-1.jpg" alt="Dokumentasi Polmed 1"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+Polmed+1'">
+                                        <img src="assets/images/placeholder-polmed-2.jpg" alt="Dokumentasi Polmed 2"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+Polmed+2'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-body">
+                                <div class="timeline-text">
+                                    <span class="timeline-date">September 2021 – November 2021</span>
+                                    <h3>PT Telkom Indonesia (Persero) Tbk</h3>
+                                    <h4 class="timeline-role">Magang – Teknisi Lapangan</h4>
+                                    <div class="timeline-tasks">
+                                        <ul>
+                                            <li>Melakukan instalasi dan konfigurasi infrastruktur jaringan berbasis
+                                                fiber optik</li>
+                                            <li>Melaksanakan penyambungan kabel (splicing) dan instalasi jaringan
+                                                pelanggan</li>
+                                            <li>Membantu troubleshooting gangguan konektivitas dan performa jaringan
+                                            </li>
+                                            <li>Melakukan konfigurasi perangkat jaringan di sisi pelanggan</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-gallery">
+                                    <strong>Dokumentasi:</strong>
+                                    <div class="gallery-images">
+                                        <img src="assets/images/placeholder-telkom-1.jpg" alt="Dokumentasi Telkom 1"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+Telkom+1'">
+                                        <img src="assets/images/placeholder-telkom-2.jpg" alt="Dokumentasi Telkom 2"
+                                            onerror="this.src='https://via.placeholder.com/800x400/21262d/4ade80?text=Dokumentasi+Telkom+2'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section -->
+        <section id="projects" class="projects section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/p1-1.png" alt="Enterprise Linux Server Administration"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Project+1'">
+                        </div>
+                        <div class="project-header">
+                            <div class="status completed">Completed</div>
+                            <h3>Enterprise Linux Server Administration</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="tech-stack">
+                                <span>Ubuntu</span>
+                                <span>SSH</span>
+                                <span>Git</span>
+                                <span>Linux CLI</span>
+                            </div>
+                            <div class="features">
+                                <strong>Fitur:</strong>
+                                <ul>
+                                    <li>User Management</li>
+                                    <li>Permission Management</li>
+                                    <li>SSH Configuration</li>
+                                    <li>Service Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="javascript:void(0)" class="btn btn-outline small-btn"
+                                onclick="openModal('project1-modal')">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/p2-1.png" alt="Virtualization Infrastructure Lab"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Project+2'">
+                        </div>
+                        <div class="project-header">
+                            <div class="status completed">Completed</div>
+                            <h3>Virtualization Infrastructure with Proxmox VE</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="tech-stack">
+                                <span>VirtualBox</span>
+                                <span>Proxmox VE</span>
+                                <span>Debian</span>
+                            </div>
+                            <div class="features">
+                                <strong>Fitur:</strong>
+                                <ul>
+                                    <li>VM Deployment</li>
+                                    <li>VM Resource Allocation</li>
+                                    <li>VM Lifecycle Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="javascript:void(0)" class="btn btn-outline small-btn"
+                                onclick="openModal('project2-modal')">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/p3-1.png"
+                                alt="Design and Configuration of Corporate Computer Networks"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Project+3'">
+                        </div>
+                        <div class="project-header">
+                            <div class="status completed">Completed</div>
+                            <h3>Design and Configuration of Corporate Computer Networks</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="tech-stack">
+                                <span>Cisco Packet Tracer</span>
+                                <span>TCP/IP</span>
+                                <span>VLAN</span>
+                            </div>
+                            <div class="features">
+                                <strong>Fitur:</strong>
+                                <ul>
+                                    <li>Network Topology Design</li>
+                                    <li>VLAN Configuration</li>
+                                    <li>Routing Configuration</li>
+                                    <li>Simulation & Testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="javascript:void(0)" class="btn btn-outline small-btn"
+                                onclick="openModal('project3-modal')">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card reveal">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/p4-1.png"
+                                alt="Website Pemilihan Destinasi Wisata Kota Medan dengan Metode AHP"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Project+4'">
+                        </div>
+                        <div class="project-header">
+                            <div class="status completed">Completed</div>
+                            <h3>Website Pemilihan Destinasi Wisata Kota Medan dengan Metode AHP</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="tech-stack">
+                                <span>Web Development</span>
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                            </div>
+                            <div class="features">
+                                <strong>Fitur:</strong>
+                                <ul>
+                                    <li>Sistem Rekomendasi AHP</li>
+                                    <li>Manajemen Destinasi Wisata</li>
+                                    <li>Kriteria dan Bobot AHP</li>
+                                    <li>Responsive UI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="javascript:void(0)" class="btn btn-outline small-btn"
+                                onclick="openModal('project4-modal')">View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card reveal">
+                        <div class="project-thumbnail">
+                            <img src="assets/images/p5-1.png" alt="Automatic Insecticide Sprayer dengan Monitoring Web"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Project+5'">
+                        </div>
+                        <div class="project-header">
+                            <div class="status completed">Completed</div>
+                            <h3>Automatic Insecticide Sprayer dengan Monitoring Web</h3>
+                        </div>
+                        <div class="project-body">
+                            <div class="tech-stack">
+                                <span>IoT</span>
+                                <span>TCP/IP</span>
+                                <span>LAN</span>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="features">
+                                <strong>Fitur:</strong>
+                                <ul>
+                                    <li>Sensor & Control System</li>
+                                    <li>Web-based Dashboard</li>
+                                    <li>Real-time Monitoring</li>
+                                    <li>Automated Spraying</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="javascript:void(0)" class="btn btn-outline small-btn"
+                                onclick="openModal('project5-modal')">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 8. Certifications -->
+        <section id="certifications" class="certifications section-padding alt-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate1.jpg" alt="Junior Network Administrator (BNSP)"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+1'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Junior Network Administrator</h3>
+                            <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate2.jpg" alt="Junior Network Administrator (VSGA)"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+2'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Junior Network Administrator (Vocational School Graduate Academy)</h3>
+                            <p class="cert-issuer">Digital Talent Scholarship</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate3.jpg" alt="Networking Basics"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+3'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Networking Basics</h3>
+                            <p class="cert-issuer">Cisco</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate4.jpg" alt="Junior Web Developer"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+4'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Junior Web Developer</h3>
+                            <p class="cert-issuer">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate5.jpg" alt="Junior Web Developer (VSGA)"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+5'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Junior Web Developer (Vocational School Graduate Academy)</h3>
+                            <p class="cert-issuer">Digital Talent Scholarship</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate6.jpg" alt="Belajar Back-End Pemula dengan JavaScript"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+6'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Back-End Pemula dengan JavaScript</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 7 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate7.jpg" alt="Belajar Dasar AI"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+7'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Dasar AI</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 8 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate8.jpg" alt="Belajar Dasar Cloud dan Gen AI di AWS"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+8'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Dasar Cloud dan Gen AI di AWS</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 9 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate9.jpg" alt="Memulai Pemrograman dengan Python"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+9'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Memulai Pemrograman dengan Python</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 10 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate10.jpg" alt="Belajar Dasar Visualisasi Data"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+10'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Dasar Visualisasi Data</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 11 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate11.jpg"
+                                alt="Belajar Dasar Structured Query Language (SQL)"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+11'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Dasar Structured Query Language (SQL)</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 12 -->
+                    <div class="cert-card-new reveal">
+                        <div class="cert-image">
+                            <img src="assets/images/certificate12.jpg" alt="Belajar Dasar Pemrograman JavaScript"
+                                onerror="this.src='https://via.placeholder.com/600x400/21262d/4ade80?text=Certificate+12'">
+                        </div>
+                        <div class="cert-info-new">
+                            <h3>Belajar Dasar Pemrograman JavaScript</h3>
+                            <p class="cert-issuer">Dicoding Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contact Section -->
+        <!-- 9. Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="contact-wrapper centered reveal">
+                    <div class="contact-info text-center">
+                        <h3>Let's Connect</h3>
+                        <p>Tertarik untuk berkolaborasi dalam project atau sekadar ingin menyapa? Jangan ragu untuk
+                            menghubungi saya melalui email.</p>
+
+                        <div class="contact-methods centered-methods">
+                            <div class="method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sumatera Utara, Indonesia</span>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>muhammaddfikri04@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>Muhammad Fikri</h3>
+                <p>Junior System Administrator</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/vfikrii" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/muhammadfikri044" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:muhammaddfikri04@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Fikri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Modals -->
+    <div id="project1-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project1-modal')">&times;</span>
+            <h2>Enterprise Linux Server Administration</h2>
+
+            <div class="modal-slider">
+                <div class="slides-p1">
+                    <img class="slide-p1" src="assets/images/p1-1.png" alt="Project 1 Image 1"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+1'">
+                    <img class="slide-p1" src="assets/images/p1-2.png" alt="Project 1 Image 2"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                    <img class="slide-p1" src="assets/images/p1-3.png" alt="Project 1 Image 3"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                </div>
+                <a class="prev" onclick="changeSlide('project1-modal', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('project1-modal', 1)">&#10095;</a>
+            </div>
+
+            <div class="modal-description mt-4">
+                <h3>Deskripsi Project</h3>
+                <p>Project ini berfokus pada pembangunan dan manajemen Enterprise Linux Server menggunakan Debian 12.
+                    Konfigurasi melibatkan pengelolaan user dan hak akses (Permission Management), pengamanan akses
+                    server melalui SSH Configuration, serta Service Management untuk memastikan layanan berjalan secara
+                    optimal.</p>
+                <div class="tech-stack mt-3">
+                    <span>Debian 12</span><span>SSH</span><span>Git</span><span>Linux CLI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project2-modal')">&times;</span>
+            <h2>Virtualization Infrastructure Lab</h2>
+
+            <div class="modal-slider">
+                <div class="slides-p2">
+                    <img class="slide-p2" src="assets/images/p2-1.png" alt="Project 2 Image 1"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+1'">
+                    <img class="slide-p2" src="assets/images/p2-2.png" alt="Project 2 Image 2"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                </div>
+                <a class="prev" onclick="changeSlide('project2-modal', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('project2-modal', 1)">&#10095;</a>
+            </div>
+
+            <div class="modal-description mt-4">
+                <h3>Deskripsi Project</h3>
+                <p>Simulasi lingkungan virtualisasi menggunakan VirtualBox. Project ini mencakup deployment Virtual
+                    Machine (Debian/Ubuntu), Snapshot Management untuk backup dan restore, serta Network Configuration
+                    dan Resource Allocation yang optimal untuk simulasi server berskala kecil.</p>
+                <div class="tech-stack mt-3">
+                    <span>VirtualBox</span><span>Debian</span><span>Ubuntu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project3-modal')">&times;</span>
+            <h2>Design and Configuration of Corporate Computer Networks</h2>
+
+            <div class="modal-slider">
+                <div class="slides-p3">
+                    <img class="slide-p3" src="assets/images/p3-1.png" alt="Project 3 Image 1"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+1'">
+                    <img class="slide-p3" src="assets/images/p3-2.png" alt="Project 3 Image 2"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                </div>
+                <a class="prev" onclick="changeSlide('project3-modal', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('project3-modal', 1)">&#10095;</a>
+            </div>
+
+            <div class="modal-description mt-4">
+                <h3>Deskripsi Project</h3>
+                <p>Project ini mencakup perancangan dan konfigurasi jaringan komputer skala perusahaan. Meliputi
+                    implementasi topologi jaringan, pengaturan VLAN, serta uji coba dan simulasi fungsionalitas jaringan
+                    menggunakan Cisco Packet Tracer.</p>
+                <div class="tech-stack mt-3">
+                    <span>Cisco Packet Tracer</span><span>TCP/IP</span><span>VLAN</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project4-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project4-modal')">&times;</span>
+            <h2>Website Pemilihan Destinasi Wisata Kota Medan dengan Metode AHP</h2>
+
+            <div class="modal-slider">
+                <div class="slides-p4">
+                    <img class="slide-p4" src="assets/images/p4-1.png" alt="Project 4 Image 1"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+1'">
+                    <img class="slide-p4" src="assets/images/p4-2.png" alt="Project 4 Image 2"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                    <img class="slide-p4" src="assets/images/p4-3.png" alt="Project 4 Image 3"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+3'"
+                        style="display:none;">
+                </div>
+                <a class="prev" onclick="changeSlide('project4-modal', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('project4-modal', 1)">&#10095;</a>
+            </div>
+
+            <div class="modal-description mt-4">
+                <h3>Deskripsi Project</h3>
+                <p>Sistem pendukung keputusan berbasis web untuk merekomendasikan destinasi wisata di Kota Medan.
+                    Mengimplementasikan metode Analytical Hierarchy Process (AHP) dalam pembobotan kriteria untuk
+                    memberikan hasil rekomendasi yang akurat.</p>
+                <div class="tech-stack mt-3">
+                    <span>Web Development</span><span>PHP</span><span>Laravel</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project5-modal" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project5-modal')">&times;</span>
+            <h2>Automatic Insecticide Sprayer dengan Monitoring Web</h2>
+
+            <div class="modal-slider">
+                <div class="slides-p5">
+                    <img class="slide-p5" src="assets/images/p5-1.png" alt="Project 5 Image 1"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+1'">
+                    <img class="slide-p5" src="assets/images/p5-2.png" alt="Project 5 Image 2"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+2'"
+                        style="display:none;">
+                    <img class="slide-p5" src="assets/images/p5-3.png" alt="Project 5 Image 3"
+                        onerror="this.src='https://via.placeholder.com/800x450/21262d/4ade80?text=Slide+3'"
+                        style="display:none;">
+                </div>
+                <a class="prev" onclick="changeSlide('project5-modal', -1)">&#10094;</a>
+                <a class="next" onclick="changeSlide('project5-modal', 1)">&#10095;</a>
+            </div>
+
+            <div class="modal-description mt-4">
+                <h3>Deskripsi Project</h3>
+                <p>Sistem penyemprot insektisida otomatis berbasis IoT yang terintegrasi dengan web dashboard untuk
+                    pemantauan secara real-time. Project ini memanfaatkan konektivitas LAN dan TCP/IP untuk memastikan
+                    komunikasi data yang andal antara perangkat dan server.</p>
+                <div class="tech-stack mt-3">
+                    <span>IoT</span><span>TCP/IP</span><span>LAN</span><span>Web Development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cert-modal" class="project-modal">
+        <div class="modal-content"
+            style="max-width: 900px; height: 90vh; display: flex; flex-direction: column; padding: 20px;">
+            <span class="close-modal" onclick="closeModal('cert-modal')"
+                style="position: absolute; right: 20px; top: 15px; z-index: 10;">&times;</span>
+            <h2 id="cert-modal-title" style="margin-bottom: 15px; padding-right: 30px; font-size: 1.5rem;">Certificate
+            </h2>
+            <div id="cert-modal-body"
+                style="flex-grow: 1; overflow: auto; background-color: #f8f9fa; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                <!-- Content will be injected here via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
