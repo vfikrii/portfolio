@@ -82,9 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // =========================================
     const typewriterElement = document.getElementById('typewriter');
     const roles = [
-        "Linux Administrator", 
-        "Network Administrator", 
-        "Infrastructure Enthusiast"
+        "IT Support Engineer", 
+        "Network Infrastructure", 
+        "IoT Developer",
+        "Field Engineer"
     ];
     let roleIndex = 0;
     let charIndex = 0;
@@ -234,7 +235,11 @@ let slideIndexes = {
     'project2-modal': 0,
     'project3-modal': 0,
     'project4-modal': 0,
-    'project5-modal': 0
+    'project5-modal': 0,
+    'project-barrier-modal': 0,
+    'project-fish-modal': 0,
+    'project-lan-modal': 0,
+    'project-grounding-modal': 0
 };
 
 window.changeSlide = function(modalId, n) {
